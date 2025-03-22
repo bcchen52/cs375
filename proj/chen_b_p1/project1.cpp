@@ -6,6 +6,7 @@
 #include <vector>
 #include <cmath>
 #include <utility> 
+#include <chrono>
 
 using namespace std;
 
@@ -76,9 +77,12 @@ int main(int argc, char *argv[]) {
     ofstream outFile("output.txt");
     //each loop is a problem, defined by the header of "entries budget"
     while (getline(inputFile2, line)) {
+
+        //start timer
         auto start = chrono::high_resolution_clock::now();
 
         vector<pair<string, int> > prices;
+        //prices in the form of [(name, price), (name, price)...] so easily indexed because combinations are given by index
 
         //we assume we are at an int line
         //parse heading line
