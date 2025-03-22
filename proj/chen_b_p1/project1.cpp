@@ -219,3 +219,5 @@ vector<vector<int> > getCombinations(int n){
 
     return output;
 }
+
+//DISCUSSION: Worst and best case are 2^n, because we are running through 2^n combinations no matter what. 
