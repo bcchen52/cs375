@@ -80,15 +80,6 @@ int main(int argc, char *argv[]){
 
         //using .sort() from algorithm, we can sort 
     }
-    //ifargv2 ==1 
-
-    //greedy a...
-    //given an array of weight and profit, current weight, current profit, get max profit
-    //greedy b...
-    //use greedy a and check max profit
-    //backtracking...
-    //need bestset. 
-    //use greedy a initially, but then you can increment 
 }
 
 int greedy1(int max, vector<map<string, int> > items){
